@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Formulario de registro</h1>
+    <form method="post" action="google.com">
+      <!--con post enviamos los datos a una base de datos para que nos registren o poniendo get es para enviar datos que ya existe y los logea. action sería la URL del servidor donde se envian los datos-->
+      <label for="nombre">Nombre:</label>
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Insert your name"
+        id="nombre"
+      />
+      <br /><br />
+      <label for="email">email</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Insert your email"
+        id="email"
+      />
+      <br /><br />
+      <label for="telephone">telephone</label>
+      <input
+        type="number"
+        name="telephone"
+        placeholder="Insert your number"
+        id="telephone"
+      />
+      <br /><br />
+      <label for="password">password</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="*******"
+        id="password"
+      />
+      <br />
+      <br />
+      <label for="woman">
+        <input type="radio" name="gender" id="woman" checked />Femenino
+      </label>
+      <label for="man">
+        <input type="radio" name="gender" id="man" />Masculino
+      </label>
+      <label for="otro">
+        <input type="radio" name="gender" id="otro" />Otro
+      </label>
+      <br /><br />
+      <label for="lenguaje">lenguaje de programación</label>
+      <select name="lenguaje" id="lenguaje">
+        <option value="javascript">javascript</option>
+        <option value="phyton">python</option>
+        <option value="java">java</option>
+      </select>
+      <br /><br />
+      <label for="spam">
+        <input type="checkbox" name="spam" id="spam" />Acepto recibir correos
+      </label>
+      <br /><br />
+      <textarea name="comentarios" id="comentario" rows="10" cols="20">
+deja un comentario</textarea
+      >
+      <!-- otra forma sería <textarea name="comentarios" id="comentario" rows="10" cols="20"placeholder="deja un comentario">
+</textarea>  así no sale el texto dentro del recuadro-->
+      <br /><br />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Vaciar formulario" />
+    </form>
+
+    <form>
+        <fieldset><!--para agrupar campos-->
+            <legend>Datos personales</legend>
+            <input type="text" name="nombre" placeholder="nombre" id="nombre"/>
+            <br>
+            <input type="text" name="apellido" placeholder="apellido" id="apellido"/>
+        </fieldset>
+    </form>
+  </body>
+</html>
